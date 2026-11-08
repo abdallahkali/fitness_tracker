@@ -1,0 +1,40 @@
+name: fitness_tracker
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  flutter_svg: ^2.0.9
+  percent_indicator: ^4.2.5
+  provider: ^6.1.5+1
+  shared_preferences: ^2.5.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: "^0.14.4"
+
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icons/data-vector.jpg"
+  min_sdk_android: 21
+
+flutter:
+  uses-material-design: true
+  
+  # أضف هذا القسم للصور
+  assets:
+    - assets/1.jpg
+    - assets/2.jpg
+    - assets/3.jpeg
+    - assets/4.jpg
