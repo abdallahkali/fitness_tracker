@@ -1,32 +1,78 @@
 # Smart AI Fitness Tracker
 
-A Flutter application prototype focused on fitness tracking, calorie estimation, workout discovery, and basic nutrition guidance.
+A Flutter fitness-tracking prototype that helps users explore workout categories and understand basic body metrics and daily nutrition estimates.
 
 ## Features
-- User profile setup and personal information selection
-- Age, body type, and body-condition selection
-- BMI, BMR, and daily calorie estimations
-- Nutrition macro calculations (protein, carbohydrates, and fats)
-- Workout categories organized by muscle groups
+
+- Profile setup with age, gender, body type, and body-condition selections
+- BMI and BMR calculations with daily calorie estimates
+- Basic protein, carbohydrate, and fat recommendations
+- Workout categories organized by muscle group
 - Arabic and English interface support
-- Local persistence for selected user data
+- Local storage for selected user information
 
 ## Tech Stack
-- Flutter / Dart
-- SharedPreferences for local data persistence
-- Rule-based fitness calculations and recommendation flows
 
-## Project Structure
-The application is organized into screens, models, providers/services, and reusable UI components. The source code contains the main Flutter application and its feature flows.
+- Flutter and Dart
+- Provider for state management
+- SharedPreferences for local persistence
+- Flutter SVG and Percent Indicator packages
+
+## Screenshots
+
+Real in-app screenshots have not been added to this repository yet. They should be captured from a running build and placed in a `screenshots/` folder. Suggested captures:
+
+- `screenshots/01-profile-setup.png`
+- `screenshots/02-body-selection.png`
+- `screenshots/03-calorie-results.png`
+- `screenshots/04-workout-categories.png`
+
+> The images currently in `assets/` are app assets, not screenshots of the running interface.
 
 ## Getting Started
-```bash
-flutter pub get
-flutter run
-```
 
-## Important Notes
-This repository is a learning/graduation-project prototype. User data is stored locally in the current implementation. Do not treat its calorie or nutrition estimates as medical advice. A production AI service, verified clinical recommendation engine, and secure backend are not claimed by this version.
+### Requirements
+
+- Flutter SDK **3.35.7 or later** (the project uses Dart SDK `^3.9.2`)
+- Android Studio or another Flutter-supported IDE
+- An Android emulator or a connected device
+
+### Run locally
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/abdallahkali/fitness_tracker.git
+   ```
+2. Open the project directory:
+   ```bash
+   cd fitness_tracker
+   ```
+3. Install dependencies:
+   ```bash
+   flutter pub get
+   ```
+4. Check available devices:
+   ```bash
+   flutter devices
+   ```
+5. Run the app:
+   ```bash
+   flutter run
+   ```
+
+To run on a specific device, use `flutter run -d <device-id>`.
+
+## Project Structure
+
+The source is organized around Flutter screens, models, providers/services, reusable widgets, and bundled assets.
+
+## Data and Limitations
+
+- This is a learning/graduation-project prototype.
+- Current profile data is stored locally; a production authentication service and backend are not included.
+- Fitness, calorie, and nutrition values are estimates for demonstration and educational purposes, not medical advice.
+- The project does not claim a deployed or validated AI recommendation service in its current repository version.
 
 ## Repository
+
 https://github.com/abdallahkali/fitness_tracker
