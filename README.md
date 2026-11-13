@@ -1,16 +1,32 @@
-# fitness_tracker
+# Smart AI Fitness Tracker
 
-A new Flutter project.
+A Flutter application prototype focused on fitness tracking, calorie estimation, workout discovery, and basic nutrition guidance.
+
+## Features
+- User profile setup and personal information selection
+- Age, body type, and body-condition selection
+- BMI, BMR, and daily calorie estimations
+- Nutrition macro calculations (protein, carbohydrates, and fats)
+- Workout categories organized by muscle groups
+- Arabic and English interface support
+- Local persistence for selected user data
+
+## Tech Stack
+- Flutter / Dart
+- SharedPreferences for local data persistence
+- Rule-based fitness calculations and recommendation flows
+
+## Project Structure
+The application is organized into screens, models, providers/services, and reusable UI components. The source code contains the main Flutter application and its feature flows.
 
 ## Getting Started
+```bash
+flutter pub get
+flutter run
+```
 
-This project is a starting point for a Flutter application.
+## Important Notes
+This repository is a learning/graduation-project prototype. User data is stored locally in the current implementation. Do not treat its calorie or nutrition estimates as medical advice. A production AI service, verified clinical recommendation engine, and secure backend are not claimed by this version.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Repository
+https://github.com/abdallahkali/fitness_tracker
